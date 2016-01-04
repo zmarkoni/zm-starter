@@ -17,6 +17,6 @@ $('#app').text('Zoran Markovic 123');
 
 console.log('javascript reporting in from app.js ...');
 
-// alert('Zoki');
+//alert('Zoki');
 
 
