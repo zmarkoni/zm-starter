@@ -22,7 +22,7 @@ body{
 
     // media query mixin, see _mixins.scss
     @include desktop {
-        background: $lightskyblue;
+        background: lightskyblue;
     }
 }
 

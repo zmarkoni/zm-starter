@@ -8,15 +8,20 @@
 // https://github.com/ModuleLoader/es6-module-loader/wiki/Brief-Overview-of-ES6-Module-syntax
 
 
-
+/////////// Ovo mi je u stvari DIST gde pozivam sve js fajlove
 
 //Test
-var $ = require('jquery');
+var test123 = require('./script/modules/test/test.js');
 
-$('#app').text('Zoran Markovic 123');
+test123('Hi Zoran Markovic');
+
+
+
+
 
 console.log('javascript reporting in from app.js ...');
 
-//alert('Zoki');
+
+
 
 
