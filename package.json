@@ -1,7 +1,7 @@
 {
   "name": "superCell",
   "version": "1.0.4",
-  "description": "Build system for node, express and react apps",
+  "description": "Build system for node",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
