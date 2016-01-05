@@ -16,9 +16,6 @@ var test123 = require('./script/modules/test/test.js');
 test123('Hi Zoran Markovic');
 
 
-
-
-
 console.log('javascript reporting in from app.js ...');
 
 

@@ -43,7 +43,7 @@ function bundle() {
     .pipe(source('main.js'))
     // optional, remove if you don't need to buffer file contents
     .pipe(buffer())
-    .pipe(uglify())
+    // .pipe(uglify()) //add for build
     // optional, remove if you dont want sourcemaps
     .pipe(sourcemaps.init({loadMaps: true})) // loads map from browserify file
     // Add transformation tasks to the pipeline here.
@@ -65,7 +65,6 @@ gulp.task('browserSync', function() {
 });
 
 
-
 // ////////////////////////////////////////////////
 // HTML Tasks
 // ////////////////////////////////////////////////
@@ -74,7 +73,6 @@ gulp.task('html', function() {
   return gulp.src('public/**/*.html')
     .pipe(browserSync.reload({stream:true}));
 });
-
 
 // ////////////////////////////////////////////////
 // Styles Tasks
@@ -85,11 +83,6 @@ gulp.task('styles', function() {
     .pipe(sourcemaps.init())
       .pipe(sass({outputStyle: 'compressed'}))
       // .on('error', errorlog)
-      .on('error', gutil.log.bind(gutil, gutil.colors.red(
-         '\n\n*********************************** \n' +
-        'SASS ERROR:' +
-        '\n*********************************** \n\n'
-        )))
       .pipe(autoprefixer({
               browsers: ['last 3 versions'],
               cascade: false
