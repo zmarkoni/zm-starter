@@ -4,33 +4,49 @@
 html {
   box-sizing: border-box;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: inherit;
 }
-
 html {
-    overflow-y: scroll;
+  overflow-y: scroll;
 }
-
-body{
-	color: $body-text;
-	margin: 0;
-	padding: 0;
-	background: #fff;
-	font-weight: $font-weight-body;
-	font-family: $font-family-primary;
-
-    // media query mixin, see _mixins.scss
-    @include desktop {
-        background: lightskyblue;
-    }
+body {
+  color: $body-text;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  font-weight: $font-weight-body;
+  font-family: $font-family-primary;
+  // media query mixin, see _mixins.scss
+  @include desktop {
+    background: lightskyblue;
+  }
 }
-
 hr {
-    border: solid #DDDDDD;
-    border-width: 1px 0 0;
-    clear: both;
-    height: 0;
-    margin: 40px 0;
+  border: solid #DDDDDD;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0;
+  margin: 40px 0;
+}
+.header {
+  padding: 20px 0;
+  img {
+    width: 50px;
+  }
+}
+.main {
+  min-height: 800px;
+  padding: 50px 20px;
+  background: white;
+  border-radius: 10px;
+}
+.footer {
+  text-align: center;
 }
 
+.section {
+  margin-bottom: 150px;
+}
