@@ -17,6 +17,8 @@ var critical      = require('critical'); // find critical CSS for above the fold
 var htmlmin       = require('gulp-htmlmin');
 var cssmin        = require('gulp-cssmin');
 var jsmin         = require('gulp-jsmin');
+
+// test
 // ////////////////////////////////////////////////
 // Javascript Browserify, Watchify, Babel, React
 // https://github.com/gulpjs/gulp/blob/master/docs/recipes/fast-browserify-builds-with-watchify.md
