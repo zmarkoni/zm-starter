@@ -1,7 +1,5 @@
-# zm-superCell
-GULP automated workflow based on Joel Longie supperCell
-
-# SuperCell 0.0.2
+##Project name
+zm-starter
 
 ## Install Packages
 
@@ -10,15 +8,26 @@ After cloning the project to your computer run the following command in your ter
     sudo npm install
     gulp
 
-The first time you run gulp the build may take a little longer as it compiles and builds out the "public/css" and "public/js" folders and files.
 
 ## Features
 
-- Browserify: JSX transforms, ES6 modules.
-- Uglify: minification.
-- BrowserSync.
-- Sass / flexbox ready (IE10+), layout for everygreen browsers.
-
+- npm           -> managing packages
+- Gulp          -> automation
+- Browserify    -> load modules
+- BrowserSync.  -> reload browser on HTML, CSS or JS change
+- Bootstrap     -> Framework
+- Sass          -> CSS preprocessors
+- Google fonts  -> Roboto
+- Html sections are in templates which content is injected via JS in index.html
+- Optimization of HTML, CSS, JS, IMAGES which is copied to dist folder for production
 ## How to use
 
-Precompiled JS and SCSS files are in the src folder and compile to public.  All other files including HTML, image etc. are in public.  BrowserSync runs from public and serves as the "Dist" folder for client-side apps.
+Precompiled JS and SCSS files are in the -> src <- folder and compile to public.  All other files including HTML, image etc. are in public.  
+
+dist folder is used for production
+
+## Using JavaScript
+
+Browserify    -> load modules
+app.js        -> Application entry point where we load all modules like Header, Navigation, templates
+sandbox       -> contain global functions
